@@ -16,7 +16,7 @@ class Storage():
 
 	def __init__(self):
 
-		self.gcp_project_id = 'GOOGLE-CLOUD-PROJECT-ID'
+		self.gcp_project_id = 'PROJECT_ID'
 		os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'PATH_TO_CREDENTIALS'
 		self.storage_client = storage.Client(self.gcp_project_id)
 		self.bucket_name = "customer_segmentation_input_data"
