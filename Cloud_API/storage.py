@@ -16,8 +16,8 @@ class Storage():
 
 	def __init__(self):
 
-		self.gcp_project_id = 'gcp-de-exp'
-		os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'F:/work projects/customer_segmentation/google-credentials/application_default_credentials.json'
+		self.gcp_project_id = 'GOOGLE-CLOUD-PROJECT-ID'
+		os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'PATH_TO_CREDENTIALS'
 		self.storage_client = storage.Client(self.gcp_project_id)
 		self.bucket_name = "customer_segmentation_input_data"
 		self.prediction_bucket_name = "cs_prediction_data"
